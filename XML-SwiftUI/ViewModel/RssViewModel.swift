@@ -28,7 +28,7 @@ class RssViewModel: ObservableObject {
 
 extension PageView {
         func filterButton1() {
-            guard let inputImage = UIImage(named: "img") else { return }
+            guard let inputImage = UIImage(named: "first") else { return }
             let beginImage = CIImage(image: inputImage)
             
             let context = CIContext()
@@ -44,7 +44,7 @@ extension PageView {
         }
         
         func filterButton2() {
-            guard let inputImage = UIImage(named: "img") else { return }
+            guard let inputImage = UIImage(named: "first") else { return }
             let beginImage = CIImage(image: inputImage)
             
             let context = CIContext()

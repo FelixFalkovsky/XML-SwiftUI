@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		88BF90A22583957D0089049E /* XML_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BF90A12583957D0089049E /* XML_SwiftUIApp.swift */; };
-		88BF90A42583957D0089049E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BF90A32583957D0089049E /* ContentView.swift */; };
 		88BF90A6258395810089049E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88BF90A5258395810089049E /* Assets.xcassets */; };
 		88BF90A9258395810089049E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88BF90A8258395810089049E /* Preview Assets.xcassets */; };
 		88BF90B6258396E40089049E /* RssItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BF90B5258396E40089049E /* RssItem.swift */; };
@@ -19,12 +18,12 @@
 		88BF90C7258397950089049E /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BF90C6258397950089049E /* BlurView.swift */; };
 		88BF90CA258397A90089049E /* NetworkManagerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BF90C9258397A90089049E /* NetworkManagerData.swift */; };
 		88BF90CE258398AD0089049E /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 88BF90CD258398AD0089049E /* SDWebImageSwiftUI */; };
+		88BF90D225839D610089049E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BF90D125839D610089049E /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		88BF909E2583957D0089049E /* XML-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "XML-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		88BF90A12583957D0089049E /* XML_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XML_SwiftUIApp.swift; sourceTree = "<group>"; };
-		88BF90A32583957D0089049E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		88BF90A5258395810089049E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88BF90A8258395810089049E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		88BF90AA258395810089049E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -35,6 +34,7 @@
 		88BF90C2258397770089049E /* XmlParserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmlParserManager.swift; sourceTree = "<group>"; };
 		88BF90C6258397950089049E /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
 		88BF90C9258397A90089049E /* NetworkManagerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerData.swift; sourceTree = "<group>"; };
+		88BF90D125839D610089049E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +73,7 @@
 				88BF90B22583969C0089049E /* ViewModel */,
 				88BF90B1258396940089049E /* Model */,
 				88BF90A12583957D0089049E /* XML_SwiftUIApp.swift */,
-				88BF90A32583957D0089049E /* ContentView.swift */,
+				88BF90D125839D610089049E /* ContentView.swift */,
 				88BF90A5258395810089049E /* Assets.xcassets */,
 				88BF90AA258395810089049E /* Info.plist */,
 				88BF90A7258395810089049E /* Preview Content */,
@@ -199,12 +199,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88BF90A42583957D0089049E /* ContentView.swift in Sources */,
 				88BF90C7258397950089049E /* BlurView.swift in Sources */,
 				88BF90BA258397110089049E /* PageView.swift in Sources */,
 				88BF90BD258397350089049E /* RssViewModel.swift in Sources */,
 				88BF90CA258397A90089049E /* NetworkManagerData.swift in Sources */,
 				88BF90A22583957D0089049E /* XML_SwiftUIApp.swift in Sources */,
+				88BF90D225839D610089049E /* ContentView.swift in Sources */,
 				88BF90B6258396E40089049E /* RssItem.swift in Sources */,
 				88BF90C02583975B0089049E /* Constant.swift in Sources */,
 				88BF90C3258397770089049E /* XmlParserManager.swift in Sources */,

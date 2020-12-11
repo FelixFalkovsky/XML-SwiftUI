@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct XML_SwiftUIApp: App {
+    @ObservedObject var viewModel = RssViewModel()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(viewModel: viewModel)
         }
     }
 }

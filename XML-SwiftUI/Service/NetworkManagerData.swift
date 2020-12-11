@@ -79,10 +79,8 @@ class NetworkManagerData: NSObject, XMLParserDelegate {
             }
             
             if postItem["enclosure"] != nil {
-                enclosure = postItem["enclosure"] as! String
-                enclosure = enclosure.components(separatedBy: .urlPathAllowed)[0]
-                
-                
+                enclosure = postItem["enclosure"] as! String 
+                enclosure = enclosure.components(separatedBy: .newlines)[0]
             }
             
             let rssItem: RssItem = RssItem(
