@@ -54,7 +54,7 @@ class NetworkManagerData: NSObject, XMLParserDelegate {
         rssFeed = myParser.feeds as [AnyObject]
         for item in rssFeed.indices {
             
-            let postItem: AnyObject = rssFeed[item]
+            var postItem: AnyObject = rssFeed[item]
             var title: String = ""
             var pubDate: String = ""
             var description: String = ""
@@ -79,9 +79,10 @@ class NetworkManagerData: NSObject, XMLParserDelegate {
             }
             
             if postItem["enclosure"] != nil {
-                enclosure = postItem["enclosure"] as? String ?? ""
-                enclosure = postItem["enclosure"].debugDescription
-                enclosure = enclosure.components(separatedBy: .newlines)[1]
+               // enclosure = postItem["enclosure"] as? String ?? ""
+                enclosure = postItem["enclosure"]?.map({$0}) as? String ?? ""
+                enclosure = enclosure.components(separatedBy: .newlines)[0]
+                postItem = enclosure as AnyObject
             }
             
             let rssItem: RssItem = RssItem(

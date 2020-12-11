@@ -41,15 +41,15 @@ struct PageView: View {
                             .foregroundColor(.gray)
                             .font(.system(size: 17, weight: Font.Weight.light, design: Font.Design.rounded))
                             .lineLimit(5)
-                        AnimatedImage(url: URL(string: item.enclosure)!)
+                        WebImage(url: URL(string: item.enclosure))
                             .resizable()
                             .customLoopCount(1)
                             .playbackRate(1.0)
                             .aspectRatio(contentMode: .fit)
                         // Переход по ссылке
                         Button {
-                          print(item.enclosure, type(of: item.enclosure))
-                         // print("\(itemArray)")
+                          //print(item.enclosure, type(of: item.enclosure))
+                          print("\(itemArray)")
                           //  print(item.link, type(of: item.link))
                         } label: {
                             Text("PRINT")
