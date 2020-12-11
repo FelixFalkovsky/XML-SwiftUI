@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,14 @@
 		88BF90A42583957D0089049E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BF90A32583957D0089049E /* ContentView.swift */; };
 		88BF90A6258395810089049E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88BF90A5258395810089049E /* Assets.xcassets */; };
 		88BF90A9258395810089049E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88BF90A8258395810089049E /* Preview Assets.xcassets */; };
+		88BF90B6258396E40089049E /* RssItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BF90B5258396E40089049E /* RssItem.swift */; };
+		88BF90BA258397110089049E /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BF90B9258397110089049E /* PageView.swift */; };
+		88BF90BD258397350089049E /* RssViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BF90BC258397350089049E /* RssViewModel.swift */; };
+		88BF90C02583975B0089049E /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BF90BF2583975B0089049E /* Constant.swift */; };
+		88BF90C3258397770089049E /* XmlParserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BF90C2258397770089049E /* XmlParserManager.swift */; };
+		88BF90C7258397950089049E /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BF90C6258397950089049E /* BlurView.swift */; };
+		88BF90CA258397A90089049E /* NetworkManagerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BF90C9258397A90089049E /* NetworkManagerData.swift */; };
+		88BF90CE258398AD0089049E /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 88BF90CD258398AD0089049E /* SDWebImageSwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +28,13 @@
 		88BF90A5258395810089049E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88BF90A8258395810089049E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		88BF90AA258395810089049E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88BF90B5258396E40089049E /* RssItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RssItem.swift; sourceTree = "<group>"; };
+		88BF90B9258397110089049E /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
+		88BF90BC258397350089049E /* RssViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RssViewModel.swift; sourceTree = "<group>"; };
+		88BF90BF2583975B0089049E /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		88BF90C2258397770089049E /* XmlParserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmlParserManager.swift; sourceTree = "<group>"; };
+		88BF90C6258397950089049E /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
+		88BF90C9258397A90089049E /* NetworkManagerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88BF90CE258398AD0089049E /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +68,10 @@
 		88BF90A02583957D0089049E /* XML-SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				88BF90B4258396AD0089049E /* Service */,
+				88BF90B3258396A50089049E /* View */,
+				88BF90B22583969C0089049E /* ViewModel */,
+				88BF90B1258396940089049E /* Model */,
 				88BF90A12583957D0089049E /* XML_SwiftUIApp.swift */,
 				88BF90A32583957D0089049E /* ContentView.swift */,
 				88BF90A5258395810089049E /* Assets.xcassets */,
@@ -67,6 +87,41 @@
 				88BF90A8258395810089049E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		88BF90B1258396940089049E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				88BF90B5258396E40089049E /* RssItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		88BF90B22583969C0089049E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				88BF90BC258397350089049E /* RssViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		88BF90B3258396A50089049E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				88BF90B9258397110089049E /* PageView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		88BF90B4258396AD0089049E /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				88BF90BF2583975B0089049E /* Constant.swift */,
+				88BF90C2258397770089049E /* XmlParserManager.swift */,
+				88BF90C6258397950089049E /* BlurView.swift */,
+				88BF90C9258397A90089049E /* NetworkManagerData.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +140,9 @@
 			dependencies = (
 			);
 			name = "XML-SwiftUI";
+			packageProductDependencies = (
+				88BF90CD258398AD0089049E /* SDWebImageSwiftUI */,
+			);
 			productName = "XML-SwiftUI";
 			productReference = 88BF909E2583957D0089049E /* XML-SwiftUI.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +170,9 @@
 				Base,
 			);
 			mainGroup = 88BF90952583957D0089049E;
+			packageReferences = (
+				88BF90CC258398AD0089049E /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = 88BF909F2583957D0089049E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,7 +200,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				88BF90A42583957D0089049E /* ContentView.swift in Sources */,
+				88BF90C7258397950089049E /* BlurView.swift in Sources */,
+				88BF90BA258397110089049E /* PageView.swift in Sources */,
+				88BF90BD258397350089049E /* RssViewModel.swift in Sources */,
+				88BF90CA258397A90089049E /* NetworkManagerData.swift in Sources */,
 				88BF90A22583957D0089049E /* XML_SwiftUIApp.swift in Sources */,
+				88BF90B6258396E40089049E /* RssItem.swift in Sources */,
+				88BF90C02583975B0089049E /* Constant.swift in Sources */,
+				88BF90C3258397770089049E /* XmlParserManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +396,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		88BF90CC258398AD0089049E /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		88BF90CD258398AD0089049E /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 88BF90CC258398AD0089049E /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 88BF90962583957D0089049E /* Project object */;
 }
